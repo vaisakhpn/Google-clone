@@ -1,5 +1,5 @@
-import HomeHeader from "@/components/HomeHeader";
-import HomeSearch from "@/components/HomeSearch";
+import HomeHeader from "@/components/Header/HomeHeader";
+import HomeSearch from "@/components/Search/HomeSearch";
 import Image from "next/image";
 
 export default function Home() {
