@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchBox from "./SearchBox";
 import {RiSettings3Line} from 'react-icons/ri'
-import { TbGridDots } from "react-icons/tb";}
+import { TbGridDots } from "react-icons/tb";
+
 
 export default function SearchHeader() {
   return (
@@ -19,11 +20,11 @@ export default function SearchHeader() {
           />
         </Link>
         <div className="flex-1" ><SearchBox/></div>
-        <div className="hidden md:inline-flex  space-x-2">
-          <RiSettings3Line className="text-4xl bg-transparent hover:bg-gray-200 rounded-full cursor-pointer"/>
-          <TbGridDots className="text-4xl bg-transparent hover:bg-gray-200 rounded-full cursor-pointer"/>
+        <div className="hidden md:inline-flex  gap-4">
+          <RiSettings3Line className="text-2xl bg-transparent hover:bg-gray-200 rounded-full cursor-pointer"/>
+          <TbGridDots className="text-2xl bg-transparent hover:bg-gray-200 rounded-full cursor-pointer"/>
         </div>
-        <button className="bg-blue-500 text-white px-6 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow ml-2">Sign in</button>
+        <button className="bg-blue-500 text-white px-5 py-2 font-medium rounded-md hover:brightness-105 hover:shadow-md transition-shadow ml-4">Sign in</button>
       </div>
     </header>
   );
